@@ -1,11 +1,11 @@
 # Site settings
-title: Freelancer
-email: your-email@domain.com
-url: https://github.com/jeromelachaud/freelancer-theme
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-keywords: "your keywords, separated by commas"
-skills: "Web Developer - Graphic Artist - User Experience Designer"
-meta_author: LastName FirstName
+title: Luke Griffin
+email: griffinluke321@gmail.com
+url: https://github.com/LukeGrif
+description: "Electronic and Computer Engineering graduate from the University of Limerick, now starting a PhD. I have hands-on experience in software engineering, data science, and semiconductor manufacturing, and have worked as a Teaching Assistant in ECE dept. Passionate about applying technology to real-world challenges and continuing to grow through research and innovation."
+keywords: "Electronic and Computer Engineering"
+skills: "Programming"
+meta_author: Griffin Luke
 
 # Google webmaster tools
 google_verify:
@@ -32,31 +32,25 @@ color:
 
 # Footer settings
 footer:
-  copyright: Dr. Henry Jekyll
+  copyright: “No man ever steps in the same river twice, for it is not the same river and he is not the same man.” – Heraclitus
   location: Location
   social: Around the Web
   credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
+  - title: linkedin
+    url: https://www.linkedin.com/in/luke-griffin-344854279/
   - title: github
-    url: http://github.com/jekyll
+    url: http://github.com/LukeGrif
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: <a href="https://www.google.com/maps/place/Lissycasey,+Co.+Clare/@52.7496975,-9.1567073,15z/data=!3m1!4b1!4m6!3m5!1s0x485b17725ff3cf57:0xc8229fe21b4f74fb!8m2!3d52.749243!4d-9.1469855!16zL20vMDJsd3B3?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D">Lissycasey</a>
+  - line: Co. Clare, Ireland
 
 # Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+credits: 'Family & Friends'
 
 # Build settings
 markdown: kramdown
