@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 3
+date: 2025-03-01
+img: project3.png
+alt: image-alt
+project-date: March 2025
+topic: Machine Vision Module Assignments
+description: Core machine vision techniques applied to real-world problems. I reconstructed images from sinograms using frequency-domain filtering, built a speed sign detector combining HSV color segmentation with 1-NN classification, and implemented Harris corner detection with RANSAC-based image stitching. Each project were designed, tested and implemented using Python.
+github: <a href=https://github.com/LukeGrif/MachineVision_Project1>Project1</a> <a href=https://github.com/LukeGrif/MachineVision_Project2>Project2</a> <a href=https://github.com/LukeGrif/MachineVision_Project3>Project3</a>
+---

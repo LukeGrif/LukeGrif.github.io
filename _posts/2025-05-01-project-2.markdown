@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 2
+date: 2025-05-01
+img: project1.png
+alt: image-alt
+project-date: April 2025
+topic: Final Year Project
+description: A Python-based command-line interface (CLI) tool designed to interface with Vector Network Analyzers (VNAs) like the NanoVNA and Siglent VNAs. The tool retrieves measurement data via UDP (Nano) or Telnet (Siglent) and generates a detailed PDF report, including plots, measurements, and AI-generated insights.
+github: <a href=https://github.com/LukeGrif/vna-reporting-cli>VNA Reporting CLI</a>
+---

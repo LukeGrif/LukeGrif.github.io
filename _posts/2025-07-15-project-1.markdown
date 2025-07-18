@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 1
+date: 2025-07-15
+img: project2.png
+alt: image-alt
+project-date: June 2025
+topic:  Sony SDK
+description: A lightweight GUI built using OpenCV for interacting with Sony cameras specifically the Sony ILX.
+github: <a href=https://github.com/LukeGrif/Sony_SDK>Sony SDK</a>
+---
