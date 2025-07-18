@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 4
+date: 2025-04-01
+img: project4.png
+alt: image-alt
+project-date: March 2025
+topic: Griffin Job Marketing
+description: This project implements a layered Jakarta EE 10 web application simulating an Online Job Marketplace, with distinct roles for Job Providers who post and manage job offers.Freelancers who apply for and complete jobs to earn virtual tokens. Administrators who manage users and posted jobs.
+github: <a href=https://github.com/LukeGrif/Layered_Distributed_System>Source Code.</a>
+---
