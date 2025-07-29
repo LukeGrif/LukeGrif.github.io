@@ -25,10 +25,26 @@
         <div class="footer-col col-md-4">
           <h3>{{ site.footer.credits }}</h3>
           <p>{{ site.credits }}</p>
+
+          <!-- Visitor Counter Display -->
+          <p>Total Site <a href="https://counterapi.dev/">Visitors</a>: <span id="visits">Loading...</span></p>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Counter Script -->
+  <script>
+    fetch('https://api.counterapi.dev/v1/LukeGrif/portfolio/up')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('visits').innerText = data.count;
+      })
+      .catch(() => {
+        document.getElementById('visits').innerText = 'Error';
+      });
+  </script>
+
   <div class="footer-below">
     <div class="container">
       <div class="row">
