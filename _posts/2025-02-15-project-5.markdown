@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 5
+date: 2025-02-01
+img: project5.png
+alt: image-alt
+project-date: February 2025 - Present
+topic: TA Modules
+description: Teaching Assistant for the following Electronic and Computer Engineering Undergraduate Modules.
+modules: Electrical Engineering, Circuit Analysis, Digital Systems, Telecommunications Fundamentals
+---

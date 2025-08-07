@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 6
+date: 2025-01-15
+img: project6.png
+alt: image-alt
+project-date: January 2025
+topic: Raspberry Pi Automated Media Center
+description: Built a custom home media center using a Raspberry Pi 5 running Raspberry Pi OS with Kodi. I installed a CAT6A Ethernet cable from the home router to the sitting room to ensure fast, reliable wired networking for media transfers and streaming. The system automatically organizes incoming video files sent over the network, using a custom Python script with real-time file monitoring and metadata parsing to classify content as movies or TV shows. Files are sorted into structured libraries, and Kodi's library is automatically refreshed. Kodi launches on boot, creating a seamless smart TV experience with no manual input required after setup.
+github: Link
+---

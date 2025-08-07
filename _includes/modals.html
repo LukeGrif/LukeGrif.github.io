@@ -40,6 +40,11 @@
                 <strong>{{ post.github }}</strong>
               </li>
               {% endif %}
+              {% if post.modules %}
+              <li>Modules:
+                <strong>{{ post.modules }}</strong>
+              </li>
+              {% endif %}
             </ul>
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
               Close</button>
