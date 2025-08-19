@@ -6,6 +6,6 @@ img: project7.png
 alt: image-alt
 project-date: November 2024
 topic: Reaction Timer and Programmable Pulse Generator (EE6621 ASICS)
-description: The project involves the design, implementation, verification and hardware prototyping of a reaction timer. The reaction timer measures the duration of a time interval between a random start time (signalled by an audible beep) and a human pressing a push button in response.
-github: <a href=https://github.com/LukeGrif/ASICS_CourseWorkProject>Link</a>
+description: The project involves the design, implementation, verification and hardware prototyping of a Programmable Pulse Generator. The pulse generator is configurable or set to a random pulse using the push buttons.
+github: <a href=https://github.com/LukeGrif/ASICS_CourseWorkProject>Source Code</a>
 ---
