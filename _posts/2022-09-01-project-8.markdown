@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 8
+date: 2022-09-01
+img: project8.png
+alt: image-alt
+project-date: September 2022 - May 2023
+topic: Mentor in the UL Peer Supported Learning Group (PSLG)
+description: I mentored a 1st year java programming module (Computer Software). <a href=https://pslc.ul.ie/pslc/web/>PSLG</a> is a proactive academic enrichment program that target difficult modules/subjects. They foster cross-year support between students on the same course by encouraging them to support each other.
+modules: Computer Software 1 & 2 (ECE - S&E)
+---

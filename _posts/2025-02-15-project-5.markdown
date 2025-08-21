@@ -4,8 +4,17 @@ modal-id: 5
 date: 2025-02-01
 img: project5.png
 alt: image-alt
-project-date: February 2025 - Present
+project-date: September 2024 - May 2025
 topic: TA Modules
-description: Teaching Assistant for the following Electronic and Computer Engineering Undergraduate Modules.
+description: >
+  Final Year Teaching Assistant for the following Electronic and Computer Engineering Undergraduate Modules.<br>
+  <br>
+  <strong>Electrical Engineering 1</strong> – supported first-year engineering students in understanding core concepts of electricity and magnetism through circuit analysis, lab demonstrations, and hands-on measurements.<br>
+  <br>
+  <strong>Circuit Analysis 1</strong> - helped students apply DC and AC analysis techniques including mesh/nodal analysis, Thevenin/Norton equivalents, transient response of RL/RC/RLC circuits, resonance, and transformer fundamentals through lab support.<br>
+  <br>
+  <strong>Digital Systems 2</strong> - focused on finite state machines, synchronous system design, and hardware description languages (HDLs), supporting students in RTL modelling, simulation, and verification of digital circuits using Verilog.<br>
+  <br>
+
 modules: Electrical Engineering, Circuit Analysis, Digital Systems, Telecommunications Fundamentals
 ---
