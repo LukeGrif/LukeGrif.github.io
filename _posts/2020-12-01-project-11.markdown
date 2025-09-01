@@ -1,0 +1,22 @@
+---
+layout: default
+modal-id: 11
+date: 2020-12-01
+img: project11.png
+alt: image-alt
+project-date: September 2019 - June 2021
+topic: DCG SOLIDWORKS Project
+description: >
+  Leaving Certificate Subjects.<br>
+  <br>
+  <strong>1.Physics (H2)</strong><br>
+  <br>
+  <strong>2.Chemistry (H4)</strong><br>
+  <br>
+  <strong>3.DCG (H1)</strong><br>
+  <br>
+  <strong>4.Applied Math (H2)</strong><br>
+  <br>
+  Achieved a score of 532 points in the Leaving Certificate. This was sufficient for my CAO 1st choice of Electronic and Computer Engineering (LM118)
+
+---
