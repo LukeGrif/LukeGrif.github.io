@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 13
+date: 2025-10-01
+img: project13.png
+alt: image-alt
+project-date: October - Present 2025 
+topic: OpenCV Underwater image mosaicing pipeline for ROV survey data
+description: This repository contains Python code for stitching underwater images captured from a downward-facing ROV camera into a seamless seabed mosaic. The script uses SIFT-based feature matching, robust geometric transforms, and feathered blending to create high-quality mosaics from large image sets.
+github: <a href=https://github.com/LukeGrif/rov-image-mosaicing>Source Code</a>
+---

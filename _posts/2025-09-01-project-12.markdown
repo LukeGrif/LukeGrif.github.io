@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 12
+date: 2025-09-01
+img: project12.png
+alt: image-alt
+project-date: September 2025 
+topic: CRIS Sony ILX Interface
+description: A simple control system for 'Aquorea Mk3 LED' and Sony ILX built with Arduino (ENC28J600 Ethernet shield and MAX485 RS485 module), Python Tkinter GUI and Sony SDK.
+github: <a href=https://github.com/CRIS-UL/CRIS_Sony_ILX_Interface>Source Code</a>
+---
