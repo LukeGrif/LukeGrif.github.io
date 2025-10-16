@@ -1,12 +1,35 @@
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
-    <div class="navbar-header">
+    <div class="navbar-header d-flex align-items-center">
       <a class="navbar-brand" href="https://www.linkedin.com/in/luke-griffin-344854279/">{{ site.title }}</a>
-      <img src="img/portfolio/cris_logo.png" alt="CRIS Logo" style="height:32px; vertical-align:middle; margin-left:10px; position:relative; top:12px;">
-      <img src="img/portfolio/eng.png" alt="School of Engineering logo" style="height:32px; vertical-align:middle; margin-left:10px; position:relative; top:12px;">=
-      <img src="img/portfolio/ece.png" alt="ECE logo" style="height:32px; vertical-align:middle; margin-left:10px; position:relative; top:12px;">
-      <img src="img/portfolio/ul.png" alt="UL logo" style="height:32px; vertical-align:middle; margin-left:10px; position:relative; top:12px;">
+      <div class="navbar-logos d-flex align-items-center">
+        <img src="img/portfolio/cris_logo.png" alt="CRIS Logo" class="nav-logo">
+        <img src="img/portfolio/eng.png" alt="School of Engineering logo" class="nav-logo nav-logo-large">
+        <img src="img/portfolio/ece.png" alt="ECE logo" class="nav-logo">
+        <img src="img/portfolio/ul.png" alt="UL logo" class="nav-logo">
+      </div>
     </div>
   </div>
 </nav>
+<style>
+  .navbar-header {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logos {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.nav-logo {
+  height: 32px;
+  margin-left: 10px;
+}
+
+.nav-logo-large {
+  height: 60px;
+}
+</style>

@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 15
+date: 2025-10-08
+img: project15.png
+alt: image-alt
+project-date: October 08 2025
+topic: ROV Survey Killaloe
+description: Attached is the Live Video of the down camera integrated into our BlueROV for data collection. My Camera and Strobe software was used.
+github: <a href=https://ulcampus-my.sharepoint.com/:v:/g/personal/21334528_studentmail_ul_ie/ER1unv2Fw0xOgAIi9us028gBNBnqB7LC_Uo2rAystcOLuw?e=HqdN0y&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>Video Link</a>
+---

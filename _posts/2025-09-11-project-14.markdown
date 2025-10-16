@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 14
+date: 2025-10-01
+img: project14.png
+alt: image-alt
+project-date: September - Present 2025 
+topic: TA for ECE Embedded Software Module
+description: This repository contains all the available Arduino Code and Corresponding Lab Sheets I have developed for the 3rd year Embedded Software Module.
+github: <a href=https://github.com/LukeGrif/Embedded_Software_Labs_2025>Source Code</a>
+---
