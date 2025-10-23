@@ -1,0 +1,85 @@
+<!-- Chart area -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div class="container my-5">
+    <h3>Room Temperature (last 10 readings)</h3>
+    <div>
+        <strong>Now:</strong> <span id="curTemp">--</span> °C
+        <small class="text-muted">Updated: <span id="curTime">--</span></small>
+    </div>
+    <div class="ratio ratio-16x9 mt-3">
+        <canvas id="tempChart"></canvas>
+    </div>
+</div>
+
+<script>
+    const USER = "LukeGrif";
+    const GIST_ID = "188dc885b3eddb2941c08042185fbe61";
+
+    const RAW_LATEST = `https://gist.githubusercontent.com/${USER}/${GIST_ID}/raw/latest.json`;
+    const RAW_HISTORY = `https://gist.githubusercontent.com/${USER}/${GIST_ID}/raw/history.json`;
+
+    const labels = [];
+    const temps = [];
+    const ctx = document.getElementById('tempChart').getContext('2d');
+
+    const chart = new Chart(ctx, {
+        type: 'line',
+        data: { labels, datasets: [{ label: 'Temperature (°C)', data: temps, borderWidth: 2, tension: 0.3 }] },
+        options: {
+            animation: false,
+            interaction: { mode: 'index', intersect: false },
+            scales: {
+                y: { beginAtZero: true, title: { display: true, text: '°C' } },
+                x: { title: { display: true, text: 'Time' } }
+            }
+        }
+    });
+
+    async function fetchJSON(url) {
+        const sep = url.includes('?') ? '&' : '?';
+        const res = await fetch(url + sep + 't=' + Date.now(), { cache: 'no-store' });
+        return res.json();
+    }
+
+    function pushPoint(tsISO, tC) {
+        const label = new Date(tsISO).toLocaleTimeString();
+        labels.push(label);
+        temps.push(Number(tC));
+        if (labels.length > 10) { labels.shift(); temps.shift(); }
+        chart.update();
+        document.getElementById('curTemp').textContent = Number(tC).toFixed(1);
+        document.getElementById('curTime').textContent = new Date(tsISO).toLocaleString();
+    }
+
+    async function loadHistory() {
+        try {
+            const hist = await fetchJSON(RAW_HISTORY);
+            // Expect newest last; if not, sort by timestamp
+            hist.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+            const last10 = hist.slice(-10);
+            last10.forEach(p => pushPoint(p.timestamp, p.temperature));
+        } catch (e) {
+            console.warn("No history yet, will start from latest.", e);
+        }
+    }
+
+    let lastTs = null;
+    async function pollLatest() {
+        try {
+            const { temperature, timestamp } = await fetchJSON(RAW_LATEST);
+            if (!lastTs || timestamp !== lastTs) {
+                lastTs = timestamp;
+                pushPoint(timestamp, temperature);
+            }
+        } catch (e) {
+            console.error("Latest fetch error:", e);
+        }
+    }
+
+    (async () => {
+        await loadHistory();
+        await pollLatest();                 // ensures at least one point
+        setInterval(pollLatest, 10000);     // poll every ~10s
+    })();
+</script>
