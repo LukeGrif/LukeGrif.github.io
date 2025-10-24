@@ -1,0 +1,131 @@
+<!-- Leaflet CSS (map library) -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+
+<style>
+  /* Scoped styles: ONLY affect the map card, not the whole site */
+  .travel-map-card {
+    max-width: 900px;
+    margin: 3rem auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    padding: 1.5rem;
+  }
+
+  .travel-map-header {
+    margin-bottom: 0.75rem;
+  }
+
+  .travel-map-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  .travel-map-header p {
+    margin: 0.25rem 0 0 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .travel-map-wrapper {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  /* The actual Leaflet map needs an explicit height */
+  #travel-map {
+    width: 100%;
+    height: 500px;
+  }
+
+  /* Slightly smaller popup text */
+  .leaflet-popup-content {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+</style>
+
+<div class="travel-map-card">
+  <div class="travel-map-header">
+    <h3>🌍 Places I've Been</h3>
+    <p>Zoom, drag, and tap the markers — green is home 🏡</p>
+  </div>
+
+  <div class="travel-map-wrapper">
+    <div id="travel-map"></div>
+  </div>
+</div>
+
+<!-- Leaflet JS -->
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""
+></script>
+
+<script>
+  // Your visited locations:
+  // [lat, lon, label, optionalType]
+  const travelSpots = [
+    [53.2734, -7.77832031, "Ireland 🏡", "home"],
+    [51.5074, -0.1278, "London, UK 🇬🇧"],
+    [48.8566, 2.3522, "Paris, France 🇫🇷"],
+    [41.3874, 2.1686, "Barcelona, Spain 🇪🇸"],
+    [38.3452, -0.4810, "Alicante, Spain 🇪🇸"],
+    [52.4862, -1.8904, "Birmingham, UK 🇬🇧"],
+    [43.7102, 7.2620, "Nice, France 🇫🇷"],
+    [45.6048, 10.6350, "Lake Garda, Italy 🇮🇹"],
+    [44.8378, -0.5792, "Bordeaux, France 🇫🇷"],
+    [43.3442, 3.2158, "Béziers, France 🇫🇷"]
+  ];
+
+  // Create the map
+  const map = L.map("travel-map", {
+    worldCopyJump: true
+  }).setView([20, 0], 2); // global-ish default view
+
+  // Tile layer (free OpenStreetMap tiles)
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 18,
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  // Default blue Leaflet marker icon
+  const defaultIcon = L.icon({
+    iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png"
+  });
+
+  // Green "home" marker icon
+  const homeIcon = L.icon({
+    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png",
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png"
+  });
+
+  // Add markers for each location
+  travelSpots.forEach(([lat, lon, label, type]) => {
+    const icon = (type === "home") ? homeIcon : defaultIcon;
+    L.marker([lat, lon], { icon }).addTo(map).bindPopup(label);
+  });
+
+  // Fit map to all markers so they're all visible
+  if (travelSpots.length > 0) {
+    const bounds = L.latLngBounds(travelSpots.map(([lat, lon]) => [lat, lon]));
+    map.fitBounds(bounds.pad(0.3));
+  }
+</script>

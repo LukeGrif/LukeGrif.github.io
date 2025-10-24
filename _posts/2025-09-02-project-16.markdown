@@ -1,0 +1,10 @@
+---
+layout: default
+modal-id: 16
+date: 2025-09-02
+img: project16.png
+alt: image-alt
+project-date: September - Present 2025 
+topic: Teaching Assistant – School of Engineering (PT4111 Manufacturing Technology)
+description: Assisted students in metalworking labs, guiding them through marking, cutting, filing, and finishing operations to machine a metal component to specification. Provided demonstrations and safety supervision on tools such as the engineers square, height gauge, hacksaw, file, scriber, and punch.
+---

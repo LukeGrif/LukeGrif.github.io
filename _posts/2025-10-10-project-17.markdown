@@ -1,0 +1,10 @@
+---
+layout: default
+modal-id: 17
+date: 2025-10-10
+img: project17.png
+alt: image-alt
+project-date: October 2025
+topic:  DIY Dog House
+description: Built using only the following tools - HandSaw, Hammer, Nails, Timber (from old fence), Galvanize
+---
